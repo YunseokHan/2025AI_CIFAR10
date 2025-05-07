@@ -64,30 +64,6 @@ report/        # CVPR‑style LaTeX paper (compile w/ latexmk)
 
 ---
 
-## ⚙️ train.sh
-
-```bash
-#!/usr/bin/env bash
-set -e
-for cfg in experiments/*.yaml; do
-  echo "=== Training $cfg ==="
-  python src/train.py --config "$cfg"
-done
-```
-
-## ⚙️ evaluate.sh
-
-```bash
-#!/usr/bin/env bash
-set -e
-for tag in baseline input_perturb label_noise20 random_shuffle; do
-  echo "=== Evaluating $tag ==="
-  python src/evaluate.py --tag "$tag"
-done
-```
-
----
-
 ## Reproducing paper figures
 
 After `evaluate.sh`, run the notebook `notebooks/make_plots.ipynb` (or `analysis.py`) to regenerate:
@@ -98,24 +74,3 @@ After `evaluate.sh`, run the notebook `notebooks/make_plots.ipynb` (or `analysis
 * Entropy table (Tab.
 
 Paths in the notebook assume the default `results/` structure.
-
----
-
-## Citation
-
-If you find this scaffold useful, please cite the accompanying report:
-
-```bibtex
-@misc{han2025cifar10corrupt,
-  title   = {Revisiting CIFAR‑10 Robustness with Unified Corruptions},
-  author  = {Yunseok Han},
-  year    = {2025},
-  url     = {https://github.com/YunseokHan/2025AI_CIFAR10}
-}
-```
-
----
-
-## License
-
-MIT License.  See `LICENSE` for details.
