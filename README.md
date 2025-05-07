@@ -59,7 +59,6 @@ src/
 train.sh       # bash helper – runs 4× train.py
 evaluate.sh    # bash helper – runs 4× evaluate.py
 results/       # logs & figures will appear here after running scripts
-report/        # CVPR‑style LaTeX paper (compile w/ latexmk)
 ```
 
 ---
