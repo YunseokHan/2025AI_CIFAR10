@@ -1,0 +1,8 @@
+tag: random_shuffle
+model: resnet18
+batch_size: 128
+epochs: 50
+lr: 0.0001
+dataset:
+  variant: random_shuffle
+  noise_ratio: 0.0
