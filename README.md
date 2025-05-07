@@ -25,7 +25,7 @@ pip install -r requirements.txt  # torch, torchvision, pyyaml, etc.
 
 ### 1. Train
 
-`train.sh` launches the four experiments with identical hyper‑parameters (Adam, lr = 1e‑4, batch 128).
+`train.sh` launches the four experiments with identical hyper‑parameters (Adam, lr = 1e‑4, batch_size = 128).
 
 ```bash
 bash train.sh           # ~70 min wall‑clock on A100; creates results/<tag>/
